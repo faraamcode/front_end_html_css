@@ -122,12 +122,30 @@ img {
     border-radius: var(--radius);
     display: grid;
     grid-template-columns: 1fr ;
+    box-shadow: 5px;
 }
 
 .login-details{
+border-radius:  2rem;
 
-background: yellow;
 }
+.logo-container{
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+.logo-image{
+  width: 5rem;
+  height: 5rem;
+}
+.login-details h4{
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
 .school-image{
 
     background: url('./images/grad.JPG') no-repeat center/cover;

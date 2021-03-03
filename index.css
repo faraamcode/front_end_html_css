@@ -89,8 +89,8 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-blue-1);
-  color: var(--clr-white);
+  background: var(--clr-main-pink);
+  color: var(--clr-white-2);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -105,7 +105,8 @@ p {
 }
 .btn:hover {
   background: var(--clr-blue-1);
-  color: var(--clr-white);
+  color: var(--clr-main-pink);
+  border: 2px solid var(--clr-main-pink);
 }
 img {
   width: 100%;
@@ -127,7 +128,6 @@ img {
 
 .login-details{
 border-radius:  2rem;
-
 }
 .logo-container{
   display: grid;
@@ -139,10 +139,27 @@ border-radius:  2rem;
   height: 5rem;
 }
 .login-details h4{
+  color: var(--clr-main-pink);
   margin-top: 1rem;
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
+}
+.login-details p{
+margin-left: 1rem;
+}
+.form-body{
+
+margin: 3rem 1rem;
+display: grid;
+row-gap: 1rem;
+}
+.form-control{
+  display: grid;
+
+}
+.form-control input{
+  height: 2rem;
 }
 
 
@@ -151,4 +168,20 @@ border-radius:  2rem;
     background: url('./images/grad.JPG') no-repeat center/cover;
     display: none;
     border-radius: var(--radius);
+}
+@media screen and (min-width : 756px){
+  .container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .school-image{
+    
+    display: block;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+.anthem-container{
+margin: 10rem 2rem;
+text-align: center;
+color: var(--clr-light-black)
 }
